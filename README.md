@@ -1,4 +1,4 @@
-# Scientific Multi-Modal RAG: Optimizing multi-modal RAG with Enhanced Captions for Figures
+# Context-Aware Figure Captioning Enhances Scientific Multi-Modal RAG
 
 This repository is based on the official repository of the paper [Beyond Text: Optimizing RAG with Multimodal Inputs for Industrial Applications](https://arxiv.org/abs/2410.21943). 
 
