@@ -1,7 +1,5 @@
 # Context-Aware Figure Captioning Enhances Scientific Multi-Modal RAG
 
-This repository is based on the official repository of the paper [Beyond Text: Optimizing RAG with Multimodal Inputs for Industrial Applications](https://arxiv.org/abs/2410.21943). 
-
 ## Table of Contents
 
 - [Features](#features)
@@ -29,15 +27,10 @@ Answer generation and evaluation are performed using **GPT-4o** or **LLaVA**.
 
 ## Pipeline Overview
 
-The **Multimodal RAG** architecture consists of two primary configurations for processing text and image data: 
+The **Multimodal RAG** architecture for processing text and image data: 
 
-1. **Multimodal Embeddings and Direct Embeddings**: In this configuration, images are embedded using CLIP, while text is embedded using a different model.
 
-   ![Multimodal RAG with Multimodal Embeddings and Separate Vector Stores](img/multimodal_rag_clip.png)
-
-2. **Image Summaries and Textual Embeddings**: In this configuration, figure captions are replacing into textual captions using a multimodal LLM. These summaries are then embedded, along with the text chunks extracted from the documents, using the same embedding model (`text-embedding-3-small`). All the embeddings are stored in a single combined vector store, allowing for a unified similarity search that retrieves both text and image information.
-
-   ![Multimodal RAG with Image Summaries and Combined Vector Store](img/multimodal_rag_summaries.png)
+   ![Multimodal RAG Pipeline with Enhanced Captions](img/pipeline.png)
 
 
 ## Directory Structure
@@ -71,6 +64,8 @@ To use the system, follow these steps:
 
 
 ## Original repository reference:
+
+This repository is based on the official repository of the paper [Beyond Text: Optimizing RAG with Multimodal Inputs for Industrial Applications](https://arxiv.org/abs/2410.21943). 
 
 ```bibtex
 @misc{riedler2024textoptimizingragmultimodal,
